@@ -1,0 +1,108 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(90, 73, 73, 0.1);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #555;
+    border-bottom: 2px solid #3a526b;
+    padding-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="checkbox"] {
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#incompleteBookList,
+#completeBookList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+[data-testid="bookItem"] {
+    background: #e9ecef;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+[data-testid="bookItem"] h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+[data-testid="bookItem"] p {
+    margin: 5px 0;
+}
+
+[data-testid="bookItem"] div {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+[data-testid="bookItemIsCompleteButton"],
+[data-testid="bookItemDeleteButton"] {
+    flex: 1;
+}
